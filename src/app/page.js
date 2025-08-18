@@ -2,8 +2,11 @@
 import "./globals.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useState } from "react";
+
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+
+import { useState } from "react";
+import ContactSection from './contact';
 
 
 
@@ -21,6 +24,9 @@ export default function Home() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
+
+
+  
   return (
     <div className="scroll-smooth">
 
@@ -481,105 +487,20 @@ export default function Home() {
           </div>
         </section>
 
+
+
+
+
+
+
+
+
+
+
+
 {/* Contact Section */}
-        <section
-          id="contact"
-          className="min-h-screen relative flex flex-col items-center justify-center bg-gray-900 text-white px-6 py-16 overflow-hidden"
-        >
-          {/* Background animated color blobs */}
-          <motion.div
-            className="absolute top-0 left-0 w-full h-full -z-20"
-            animate={{ rotate: 360 }}
-            transition={{ repeat: Infinity, duration: 600, ease: "linear" }}
-          >
-            <div className="absolute w-96 h-96 bg-gradient-to-tr from-blue-500 via-purple-500 to-pink-500 rounded-full top-10 left-10 opacity-30 animate-pulse"></div>
-            <div className="absolute w-80 h-80 bg-gradient-to-tr from-pink-500 via-purple-400 to-blue-500 rounded-full bottom-10 right-20 opacity-30 animate-pulse"></div>
-            <div className="absolute w-72 h-72 bg-gradient-to-tr from-green-400 via-blue-400 to-purple-500 rounded-full top-1/3 right-1/4 opacity-30 animate-pulse"></div>
-          </motion.div>
+    <ContactSection/>
 
-          {/* Heading */}
-          <motion.h2
-            className="text-5xl md:text-6xl font-bold mb-4 text-center"
-            initial={{ y: -50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            Get in Touch
-          </motion.h2>
-
-          <motion.p
-            className="text-gray-300 text-lg md:text-xl mb-6 text-center max-w-2xl"
-            initial={{ y: -20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            Whether you want to discuss a project, collaborate, or just say
-            hello, I’m always open to connecting. Let’s create something amazing
-            together!
-          </motion.p>
-
-          <motion.p
-            className="text-gray-400 text-center mb-12 max-w-2xl"
-            initial={{ y: -20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
-            You can reach me via email or phone, or just fill out the form below
-            and I’ll get back to you as soon as possible.
-          </motion.p>
-
-          {/* Contact Info Cards */}
-          <motion.div
-            className="flex flex-col md:flex-row gap-6 mb-12"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <div className="bg-gray-800/80 p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition-transform duration-300">
-              <h3 className="font-semibold text-xl mb-2">Email</h3>
-              <p className="text-gray-300">faridullah.dev01@gmail.com</p>
-            </div>
-            <div className="bg-gray-800/80 p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition-transform duration-300">
-              <h3 className="font-semibold text-xl mb-2">Phone</h3>
-              <p className="text-gray-300">03494288200</p>
-            </div>
-          </motion.div>
-
-          {/* Contact Form */}
-          <motion.form
-            className="w-full max-w-2xl flex flex-col gap-6 bg-gray-800/80 p-8 rounded-2xl backdrop-blur-md shadow-lg"
-            initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-          >
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-400 outline-none transition"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-400 outline-none transition"
-            />
-            <textarea
-              placeholder="Your Message"
-              rows={5}
-              className="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:border-blue-400 outline-none transition resize-none"
-            />
-            <button
-              type="submit"
-              className="w-full py-3 bg-blue-600 hover:bg-blue-500 rounded-xl text-white font-semibold transition-transform transform hover:scale-105"
-            >
-              Send Message
-            </button>
-          </motion.form>
-        </section>
       </main>
 
 
