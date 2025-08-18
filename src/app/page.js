@@ -353,9 +353,7 @@ export default function Home() {
                 desc: "A sleek dark-themed calculator built with HTML, CSS, and JavaScript that supports basic arithmetic operations with a modern UI.",
                 tech: ["Python", "FastAPI", "JavaScript"],
                 github: "https://github.com/FaridCraft",
-                demo: "my-demoo.netlify.app
-
-",
+                demo: "my-demoo.netlify.app"
               },
               {
                 title: "Login & Signup Form with Validation",
