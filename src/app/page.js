@@ -541,7 +541,7 @@ export default function Home() {
           >
             <div className="bg-gray-800/80 p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition-transform duration-300">
               <h3 className="font-semibold text-xl mb-2">Email</h3>
-              <p className="text-gray-300">faridullah.dev01@example.com</p>
+              <p className="text-gray-300">faridullah.dev01@gmail.com</p>
             </div>
             <div className="bg-gray-800/80 p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition-transform duration-300">
               <h3 className="font-semibold text-xl mb-2">Phone</h3>
