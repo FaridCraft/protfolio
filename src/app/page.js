@@ -346,14 +346,16 @@ export default function Home() {
                 desc: "A professional portfolio built with Next.js, React, and TailwindCSS — high lighting my expertise, skills, and real-world projects.",
                 tech: ["React", "Next.js", "TailwindCSS"],
                 github: "https://github.com/FaridCraft",
-                demo: "http://192.168.1.7:3000",
+                demo: "faridullah-protfolio.netlify.app",
               },
               {
                 title: "Colculator",
                 desc: "A sleek dark-themed calculator built with HTML, CSS, and JavaScript that supports basic arithmetic operations with a modern UI.",
                 tech: ["Python", "FastAPI", "JavaScript"],
                 github: "https://github.com/FaridCraft",
-                demo: "http://127.0.0.1:5501/index.html",
+                demo: "my-demoo.netlify.app
+
+",
               },
               {
                 title: "Login & Signup Form with Validation",
